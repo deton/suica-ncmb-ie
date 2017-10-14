@@ -1,0 +1,29 @@
+{
+    "name": "io.github.deton.suicareaderapp",
+    "displayName": "suica2ncmb",
+    "version": "1.0.0",
+    "description": "Read Suica history and upload to NCMB mBaaS",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "KIHARA, Hideto",
+    "license": "MIT",
+    "dependencies": {
+        "cordova-android": "^6.2.3",
+        "cordova-plugin-suicareader": "git+https://github.com/deton/cordova-plugin-suicareader.git",
+        "cordova-plugin-whitelist": "^1.3.2",
+        "ncmb": "^2.1.5",
+        "phonegap-nfc": "^0.7.0"
+    },
+    "cordova": {
+        "plugins": {
+            "cordova-plugin-whitelist": {},
+            "phonegap-nfc": {},
+            "io.github.deton.suicareader": {}
+        },
+        "platforms": [
+            "android"
+        ]
+    }
+}

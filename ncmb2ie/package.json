@@ -1,0 +1,15 @@
+{
+    "name": "ncmb2ie",
+    "displayName": "ncmb2ie",
+    "version": "1.0.0",
+    "description": "Get total transit value from NCMB mBaaS",
+    "main": "ncmbtransit.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "KIHARA, Hideto",
+    "license": "MIT",
+    "dependencies": {
+        "ncmb": "^2.1.5"
+    }
+}
