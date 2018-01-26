@@ -18,7 +18,10 @@ function onNfc(nfcEvent) {
             tbody.removeChild(tbody.firstChild);
         }
         // 表示データを追加
-        data.forEach(function (elem, i) {
+        data.filter(function (elem) {
+            return (elem.kind != '物販');
+            // XXX: action == '運賃支払(改札出場)' のみにする?
+        }).forEach(function (elem, i) {
             var tr = document.createElement('tr');
             // 選択用チェックボックス
             var tdinput = document.createElement('td');
